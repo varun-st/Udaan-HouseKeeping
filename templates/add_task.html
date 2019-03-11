@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add task</title>
+	<style type="text/css">
+		h3 {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Add task</h1>
+	<form action = "http://localhost:5000/add-task-entry" method = "POST">
+			<label for="task-id">Task Id:</label>
+			<input type="text" name="task-id" id="task-id"><br>
+			<label for="task-name">Task Name:</label>
+			<input type="text" name="task-name" id="task-name"><br>
+			<label for="task-description">Task Description:</label>
+			<textarea placeholder="Add Task Description..." id="task-description" name="task-description"></textarea><br>
+		<input type="submit" value="Add Task">
+	</form>
+</body>
+</html>

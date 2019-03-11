@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add worker</title>
+	<style type="text/css">
+		h3 {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Allocate Task</h1>
+	<form action = "http://localhost:5000/allocate-task-entry" method = "POST">
+			<label for="asset-id">Asset Id:</label>
+			<input type="text" name="asset-id" id="asset-id"><br>
+			<label for="task-id">Task Id:</label>
+			<input type="text" name="task-id" id="task-id"><br>
+			<label for="worker-id">Worker Id:</label>
+			<input type="text" name="worker-id" id="worker-id"><br>
+			<label for="time-alloc">Time of Allocation:</label>
+			<input type="text" name="time-alloc" id="time-alloc"><br>
+			<label for="task-deadline">Task to be performed by:</label>
+			<input type="text" name="task-deadline" id="task-deadline"><br>
+		<input type="submit" value="Allocate Task">
+	</form>
+</body>
+</html>

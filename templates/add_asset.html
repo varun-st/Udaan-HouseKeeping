@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Asset</title>
+	<style type="text/css">
+		h3 {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Add Asset</h1>
+	<form action = "http://localhost:5000/add-asset-entry" method = "POST"> 
+			<label for="asset-id">Asset Id:</label>
+			<input type="text" name="asset-id" id="asset-id"><br>
+			<label for="asset-name">Asset Name:</label>
+			<input type="text" name="asset-name" id="asset-name"><br>
+			<label for="asset-description">Asset Description:</label>
+			<textarea placeholder="Add Asset Description..." id="asset-description" name="asset-description"></textarea><br>
+		<input type="submit" value="Add Asset">
+	</form>
+</body>
+</html>

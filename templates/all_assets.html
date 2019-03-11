@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asset Details</title>
+</head>
+<body>
+	<h1>Details of All Assets</h1>
+	<table border = 1>
+		<tr>
+			<th>Asset ID</th>
+			<th>Asset Name</th>
+			<th>Asset Description</th>
+		</tr>
+         {% for ele in rows %}
+            <tr>
+               <td> {{ ele[0] }} </td>
+               <td> {{ ele[1] }} </td>
+               <td> {{ ele[2] }} </td>
+            </tr>
+         {% endfor %}
+      </table>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add worker</title>
+	<style type="text/css">
+		h3 {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Add worker</h1>
+	<form action = "http://localhost:5000/add-worker-entry" method = "POST">
+			<label for="worker-id">Worker Id:</label>
+			<input type="text" name="worker-id" id="worker-id"><br>
+			<label for="worker-name">Worker Name:</label>
+			<input type="text" name="worker-name" id="worker-name"><br>
+			<label for="worker-gender">Worker Gender:</label>
+			<input type="text" name="worker-gender" id="worker-gender"><br>
+			<label for="worker-dob">Worker DOB:</label>
+			<input type="text" name="worker-dob" id="worker-dob"><br>
+			<label for="worker-designation">Worker Designation:</label>
+			<input type="text" name="worker-designation" id="worker-designation"><br>
+			<label for="worker-phone">Worker Phone:</label>
+			<input type="text" name="worker-phone" id="worker-phone"><br>
+			<label for="worker-email">Worker E-mail:</label>
+			<input type="text" name="worker-email" id="worker-email"><br>
+		<input type="submit" value="Add Worker">
+	</form>
+</body>
+</html>

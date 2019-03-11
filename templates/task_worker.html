@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task Details</title>
+</head>
+<body>
+	<h1>Details of All Tasks Assigned to {{name}}</h1>
+	<table border = 1>
+		<ul>
+		{% if rows|length > 0 %}
+        	{% for ele in rows %}
+            <li>
+            	{{ele[0]}}
+            </li>
+         	{% endfor %}
+    	{% else %}
+        	<p>No tasks assigned so far</p>
+    	{% endif %}
+         
+     </ul>
+      </table>
+</body>
+</html>
