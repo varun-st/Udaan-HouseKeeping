@@ -1,5 +1,7 @@
 # Udaan-HouseKeeping
 
+A small web application based on Flask built for a 90-Minute Hackathon for Udaan Recruitment Process.
+
 # To Start the Server
 
 If you are using Ubuntu Terminal, go to the path the file is located in and type
